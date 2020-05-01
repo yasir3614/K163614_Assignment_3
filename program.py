@@ -5,7 +5,7 @@ import math as m
 
 def main():
 
-    training_data = read_excel_file_and_extract_data("missnida.xlsx")
+    training_data = read_excel_file_and_extract_data("training.xlsx")
     total_rows = training_data.nrows
     total_columns = training_data.ncols
     features = populate_feature_by_column_values(total_columns, total_rows, training_data)
@@ -64,7 +64,7 @@ def main():
     ### STEP 05 Training Data Set ##############
     print("\n####### Step 05 :: Training Process Started #######")
 
-    testing_data = read_excel_file_and_extract_data("missnidatesting.xlsx")
+    testing_data = read_excel_file_and_extract_data("testing.xlsx")
     total_rows_testing = testing_data.nrows
     total_columns_testing = testing_data.ncols
     features_Testing = populate_feature_by_column_values(total_columns_testing, total_rows_testing, testing_data)
